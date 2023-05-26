@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/banzirco/gpt.banzir.com   # Set the deployment path
+    - /bin/bash $DEPLOYPATH/deploy.sh
