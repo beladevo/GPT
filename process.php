@@ -48,9 +48,9 @@ $scheduler->addAppointment("2023-05-28", "09:30 AM", "Alice Johnson");
 $appointments = $scheduler->getAppointments();
 
 foreach ($appointments as $appointment) {
-    echo "Appointment: " . $appointment->getName() . "\n";
-    echo "Date: " . $appointment->getDate() . "\n";
-    echo "Time: " . $appointment->getTime() . "\n";
-    echo "---------------------------------\n";
+    echo nl2br("Appointment: " . $appointment->getName() . "\n");
+    echo nl2br("Date: " . $appointment->getDate() . "\n");
+    echo nl2br("Time: " . $appointment->getTime() . "\n");
+    echo nl2br("---------------------------------\n");
 }
 ?>
