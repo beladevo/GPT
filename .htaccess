@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Rewrite /process to /process.php
+RewriteRule ^process$ process.php [L]
+
+# Serve existing files and directories as they are
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other requests to index.php
+RewriteRule ^(.*)$ index.php/$1 [L]

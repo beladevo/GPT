@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <h2>Create Appointment</h2>
-        <form action="process.php" method="POST">
+        <form action="process" method="POST">
             <div class="row">
                 <div class="input-field col s12">
                     <input type="text" id="name" name="name" required>
